@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *,
 *::after,
 *::before {
@@ -7,4 +9,18 @@
 
 body {
   margin: 0;
+}
+
+:root {
+  /* colors */
+  --color-primary: #87d2d2;
+  --color-secondary: #f1dbd5;
+  --color-tertiary: #01a299;
+  --color-background: #dbe6eb;
+  --color-highlight: #064142;
+  --color-settings: #f00;
+  --color-settings-background: #fff;
+
+  /* fonts */
+  --font-primary: 'Roboto', 'sans-serif';
 }

@@ -1,0 +1,7 @@
+.location_button {
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  background-color: var(--color-settings);
+}

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Button } from './App/components/Button';
 import styles from './App.module.css';
 
 function App() {
@@ -19,18 +18,6 @@ function App() {
     //   .then((result) => setMessage(result.message));
   }, []);
 
-  return (
-    <div className={styles.app}>
-      <p>Hello Vite + React!</p>
-      <p>
-        <Button
-          size="large"
-          onClick={() => setCount((count) => count + 1)}
-          label={`count is: ${count}`}
-        />
-      </p>
-      <p>{message}</p>
-    </div>
-  );
+  return <div className={styles.app}></div>;
 }
 export default App;

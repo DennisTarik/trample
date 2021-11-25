@@ -1,0 +1,20 @@
+.logout_button {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--color-settings);
+  place-items: center;
+  border-radius: 1rem;
+  width: 16.625rem;
+  height: 3.125rem;
+  font-size: 1.875rem;
+}
+
+.logout_text {
+  margin: 0;
+  color: var(--color-settings-background);
+  font-family: var(--font-primary);
+}
+
+.logout_svg {
+  color: white;
+}

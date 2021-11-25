@@ -1,0 +1,20 @@
+.reset_button {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: var(--color-settings);
+  place-items: center;
+  border-radius: 1rem;
+  width: 16.625rem;
+  height: 3.125rem;
+  font-size: 1.875rem;
+}
+
+.reset_text {
+  margin: 0;
+  color: var(--color-settings-background);
+  font-family: var(--font-primary);
+}
+
+.reset_svg {
+  color: white;
+}
