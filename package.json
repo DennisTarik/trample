@@ -8,7 +8,7 @@
     "build-client": "tsc && vite build",
     "build-server": "tsc --project server/tsconfig.json",
     "serve": "vite preview",
-    "lint": "stylelint \"**/*.css\" && eslint . && prettier . --check",
+    "lint": "stylelint \"**/*.css\" && eslint . && prettier . --check && tsc --noEmit",
     "lint-fix": "stylelint \"**/*.css\" --fix && eslint . --fix && prettier . --write",
     "start": "node dist/index.js",
     "prepare": "husky install",

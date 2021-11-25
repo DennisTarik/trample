@@ -8,3 +8,13 @@
 body {
   margin: 0;
 }
+
+/* colors */
+:root {
+  --color-primary: #87d2d2;
+  --color-secondary: #f1dbd5;
+  --color-tertiary: #01a299;
+  --color-highlight: #064142;
+  --color-settings: #f00;
+  --color-settings-background: #fff;
+}
