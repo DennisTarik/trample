@@ -12,6 +12,7 @@
 .reset_text {
   margin: 0;
   color: var(--color-settings-background);
+  font-family: var(--font-primary);
 }
 
 .reset_svg {
