@@ -1,1 +1,6 @@
- ;
+.taskbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90vw;
+  background-color: var(--color-tertiary);
+}
