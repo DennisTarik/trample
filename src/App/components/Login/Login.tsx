@@ -1,5 +1,10 @@
-import styles from './Login.modules.css';
+import styles from './Login.module.css';
 
 export default function Login(): JSX.Element {
-  return <button>Yes</button>;
+  return (
+    <div className={styles.login}>
+      <input placeholder="Username" className={styles.user} />
+      <input placeholder="Password" className={styles.password} />
+    </div>
+  );
 }
