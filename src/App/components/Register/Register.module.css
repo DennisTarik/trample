@@ -1,0 +1,10 @@
+.register {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  width: 13.875rem;
+  height: 2.8125rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
