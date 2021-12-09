@@ -18,6 +18,6 @@ function App() {
     //   .then((result) => setMessage(result.message));
   }, []);
 
-  return <div className={styles.app}></div>;
+  return <div className={styles.app}>test</div>;
 }
 export default App;
