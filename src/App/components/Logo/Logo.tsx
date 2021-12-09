@@ -1,8 +1,11 @@
+import styles from './Logo.module.css';
+
 export default function Logo(): JSX.Element {
   return (
     <svg
       width="250"
       height="250"
+      className={styles.logo}
       viewBox="0 0 250 250"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
