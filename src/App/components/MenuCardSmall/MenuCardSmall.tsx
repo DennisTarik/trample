@@ -1,20 +1,20 @@
-import styles from './MenuCard.module.css';
+import styles from './MenuCardSmall.module.css';
 
-type MenuCardProps = {
+type MenuCardSmallProps = {
   text: string;
   imgSrc: string;
   href: string;
   alt: string;
 };
 
-export default function MenuCard({
+export default function MenuCardSmall({
   text,
   imgSrc,
   href,
   alt,
-}: MenuCardProps): JSX.Element {
+}: MenuCardSmallProps): JSX.Element {
   return (
-    <a className={styles.cardbig} href={href}>
+    <a className={styles.cardsmall} href={href}>
       <img src={imgSrc} alt={alt} className={styles.picture} />
       <span className={styles.text}>{text}</span>
     </a>

@@ -1,13 +1,13 @@
-.cardbig {
+.cardsmall {
   display: grid;
-  grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr 1fr;
   background-color: var(--color-secondary);
   width: 90%;
   border-radius: 1rem;
   place-items: center;
 }
 
-.cardbig img {
+.cardsmall img {
   width: 100%;
   padding: 2rem;
 }

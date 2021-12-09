@@ -1,4 +1,10 @@
-.menu {
+.primary {
   display: grid;
-  gap: 1em;
+  gap: 1rem;
+}
+
+.secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
