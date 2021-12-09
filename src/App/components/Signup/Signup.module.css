@@ -2,6 +2,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  justify-self: center;
   background-color: var(--color-primary);
   width: 16.5rem;
   height: 4.375rem;
