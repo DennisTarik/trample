@@ -11,16 +11,16 @@ export default function Menupage(): JSX.Element {
   return (
     <div className={styles.primary}>
       <MenuCard
-        text="Statistics"
-        imgSrc={StatisticsSrc}
-        href="#"
-        alt="Statistics diagramm"
-      />
-      <MenuCard
         text="Profile"
         imgSrc={ProfileSrc}
         href="#"
         alt="Profile picture"
+      />
+      <MenuCard
+        text="Statistics"
+        imgSrc={StatisticsSrc}
+        href="#"
+        alt="Statistics diagramm"
       />
       <div className={styles.secondary}>
         <MenuCardSmall

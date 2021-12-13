@@ -3,7 +3,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  width: 90vw;
+  width: 100vw;
   height: 5.625rem;
   background-color: var(--color-tertiary);
+  position: fixed;
+  bottom: 0;
 }

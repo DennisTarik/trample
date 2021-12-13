@@ -1,11 +1,13 @@
 .cardbig {
   display: grid;
-  grid-template-columns: 30% 1fr;
-  background-color: var(--color-secondary);
-  width: 80%;
-  height: 20%;
-  border-radius: 1rem;
   place-items: center;
+  grid-template-columns: 30% 1fr;
+  width: 95%;
+  height: 35vw;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  background-color: var(--color-secondary);
+  box-shadow: 0.25rem 0.25rem 0.75rem;
 }
 
 .cardbig img {
