@@ -1,1 +1,15 @@
- ;
+.primary {
+  display: grid;
+  justify-items: center;
+  background-color: var(--color-background);
+  background-size: cover;
+  height: 100vh;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}

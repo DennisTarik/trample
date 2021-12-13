@@ -1,0 +1,25 @@
+.cardsmall {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr 1fr;
+  width: 45vw;
+  height: 80%;
+  border-radius: 1rem;
+  background-color: var(--color-secondary);
+  box-shadow: 0.25rem 0.25rem 0.75rem;
+}
+
+.cardsmall img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.picture {
+  border-radius: 90%;
+}
+
+.text {
+  font-size: 2.5rem;
+  justify-items: center;
+  align-items: center;
+}
