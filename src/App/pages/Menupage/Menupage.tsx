@@ -5,6 +5,7 @@ import StatisticsSrc from '../../../assets/Statistics.svg';
 import ProfileSrc from '../../../assets/Profile.jpg';
 import HistorySrc from '../../../assets/History.svg';
 import MilestoneSrc from '../../../assets/Milestone.svg';
+import Taskbar from '../../components/Taskbar/Taskbar';
 
 export default function Menupage(): JSX.Element {
   return (
@@ -35,6 +36,7 @@ export default function Menupage(): JSX.Element {
           alt="Milestone logo"
         />
       </div>
+      <Taskbar />
     </div>
   );
 }
