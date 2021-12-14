@@ -1,8 +1,9 @@
 import styles from './LocationInput.module.css';
+import LocationMarker from '../../components/MapComponent/MapComponent';
 
 export default function LocationInput(): JSX.Element {
   return (
-    <button className={styles.location_button}>
+    <button onClick={LocationMarker} className={styles.location_button}>
       <svg
         width="30"
         height="30"
