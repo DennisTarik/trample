@@ -4,10 +4,6 @@ import path from 'path';
 const port = process.env.PORT || 3001;
 const app = express();
 
-app.get('/api/hello', (_request, response) => {
-  response.json({ message: 'Hello from server' });
-});
-
 // Serve production bundle
 app.use(express.static('dist'));
 
