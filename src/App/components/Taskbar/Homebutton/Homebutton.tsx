@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 export default function Homebutton(): JSX.Element {
   return (
-    <a href="#">
+    <Link to="/menu">
       <svg
         width="51"
         height="51"
@@ -16,6 +18,6 @@ export default function Homebutton(): JSX.Element {
           fill="#064142"
         />
       </svg>
-    </a>
+    </Link>
   );
 }

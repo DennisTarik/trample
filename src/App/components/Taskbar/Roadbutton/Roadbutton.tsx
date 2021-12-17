@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 export default function Roadbutton(): JSX.Element {
   return (
-    <a href="#">
+    <Link to="/card">
       <svg
         width="71"
         height="71"
@@ -37,6 +39,6 @@ export default function Roadbutton(): JSX.Element {
           fill="#064142"
         />
       </svg>
-    </a>
+    </Link>
   );
 }
