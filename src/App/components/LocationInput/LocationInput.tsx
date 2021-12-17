@@ -1,9 +1,33 @@
 import styles from './LocationInput.module.css';
-import LocationMarker from '../../components/MapComponent/MapComponent';
+import { useMap, useMapEvents } from 'react-leaflet';
+import { LatLng } from 'leaflet';
 
-export default function LocationInput(): JSX.Element {
+type LocationInputProps = {
+  setPosition: (position: LatLng) => void;
+  onAdd: (latlng: LatLng) => void;
+};
+
+export default function LocationInput({
+  setPosition,
+  onAdd,
+}: LocationInputProps) {
+  const map = useMap();
+  const locateAndFly = () => {
+    map.locate({ setView: true, maxZoom: map.getZoom() });
+  };
+
+  useMapEvents({
+    click(event) {
+      const { latlng } = event;
+      onAdd(latlng);
+    },
+    locationfound(e) {
+      setPosition(e.latlng);
+    },
+  });
+
   return (
-    <button onClick={LocationMarker} className={styles.location_button}>
+    <button onClick={() => locateAndFly()} className={styles.location_button}>
       <svg
         width="30"
         height="30"

@@ -1,0 +1,12 @@
+.page {
+  display: grid;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 10%;
+}

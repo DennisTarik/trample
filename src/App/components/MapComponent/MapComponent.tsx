@@ -1,37 +1,18 @@
 import styles from './MapComponent.module.css';
+import LocationInput from '../LocationInput/LocationInput';
+import { LatLng } from 'leaflet';
 import { useState } from 'react';
-import { LatLngExpression } from 'leaflet';
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-  useMapEvents,
-} from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-export function LocationMarker() {
-  const [position, setPosition] = useState<LatLngExpression | null>(null);
-  const map = useMapEvents({
-    click() {
-      map.locate();
-    },
-    locationfound(e) {
-      setPosition(e.latlng);
-      map.flyTo(e.latlng, map.getZoom());
-    },
-  });
-
-  return (
-    position && (
-      <Marker position={position}>
-        <Popup>You are Here</Popup>
-      </Marker>
-    )
-  );
-}
-
 export default function MapComponent(): JSX.Element {
+  const [position, setPosition] = useState(new LatLng(0, 0));
+  const [markers, setMarkers] = useState<LatLng[]>([]);
+
+  const handleAdd = (latLng: LatLng) => {
+    setMarkers((markers) => [...markers, latLng]);
+  };
+
   return (
     <MapContainer
       className={styles.map}
@@ -39,6 +20,14 @@ export default function MapComponent(): JSX.Element {
       zoom={20}
       scrollWheelZoom={false}
     >
+      {position && (
+        <Marker position={position}>
+          <Popup>You are Here</Popup>
+        </Marker>
+      )}
+      {markers.map((marker) => (
+        <Marker key={marker.toString()} position={marker} />
+      ))}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -48,7 +37,7 @@ export default function MapComponent(): JSX.Element {
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
       </Marker>
-      <LocationMarker />
+      <LocationInput setPosition={setPosition} onAdd={handleAdd} />
     </MapContainer>
   );
 }
