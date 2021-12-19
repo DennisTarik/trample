@@ -9,6 +9,7 @@
 
 body {
   margin: 0 auto;
+  background-color: var(--color-background);
 }
 
 :root {

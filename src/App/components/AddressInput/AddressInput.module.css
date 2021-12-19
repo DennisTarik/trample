@@ -1,17 +1,19 @@
 .address_input {
-  display: grid;
   justify-content: center;
-  width: 16.625rem;
-  height: 3.125rem;
-  font-size: 1.875rem;
+  position: fixed;
+  width: 60%;
+  height: 3rem;
+  font-size: 1.4rem;
   z-index: 100;
   padding: 1rem;
   border-radius: 1rem;
+  right: 28%;
+  top: 10%;
   background-color: var(--color-primary);
   color: var(--color-highlight);
   font-family: var(--font-primary);
 }
 
 .address_input::placeholder {
-  padding-left: 1.3rem;
+  text-align: center;
 }

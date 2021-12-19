@@ -1,27 +1,28 @@
 .login {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  justify-self: center;
 }
 
 .user {
-  background-color: var(--color-primary);
   text-align: center;
+  justify-self: center;
   font: var(--font-primary);
+  background-color: var(--color-primary);
   border-radius: 1rem;
   font-size: 1.875rem;
-  width: 13.875rem;
+  width: 80%;
   height: 2.8125rem;
   margin: 1rem;
 }
 
 .password {
-  background-color: var(--color-primary);
   text-align: center;
+  justify-self: center;
   font: var(--font-primary);
+  background-color: var(--color-primary);
   border-radius: 1rem;
   font-size: 1.875rem;
-  width: 13.875rem;
+  width: 80%;
   height: 2.8125rem;
   margin: 1rem;
 }

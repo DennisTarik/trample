@@ -3,12 +3,16 @@ import Roadbutton from './Roadbutton/Roadbutton';
 import Settingsbutton from './Settingsbutton/Settingsbutton';
 import styles from './Taskbar.module.css';
 
-export default function Taskbar(): JSX.Element {
+type TaskbarProps = {
+  onSettings: () => void;
+};
+
+export default function Taskbar({ onSettings }: TaskbarProps): JSX.Element {
   return (
     <div className={styles.taskbar}>
       <Homebutton />
       <Roadbutton />
-      <Settingsbutton />
+      <Settingsbutton onClickHandler={onSettings} />
     </div>
   );
 }

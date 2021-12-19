@@ -1,8 +1,8 @@
 .location_button {
   justify-content: center;
   position: absolute;
-  right: 2rem;
-  top: 4rem;
+  right: 10%;
+  top: 10%;
   width: 3.125rem;
   height: 3.125rem;
   z-index: 400;
