@@ -35,19 +35,39 @@ export default function MapComponent(): JSX.Element {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={[47.99066842, 7.847929]}>
-          <Popup>Paul</Popup>
+          <Popup>
+            Paul
+            <br />
+            Destination: Köln
+          </Popup>
         </Marker>
         <Marker position={[48.227828, 7.750191]}>
-          <Popup>Flavio</Popup>
+          <Popup>
+            Flavio
+            <br />
+            Destination: Bremen
+          </Popup>
         </Marker>
         <Marker position={[48.1283, 8.001555]}>
-          <Popup>Noemi</Popup>
+          <Popup>
+            Noemi
+            <br />
+            Destination: Mannheim
+          </Popup>
         </Marker>
         <Marker position={[47.77778, 8.181662]}>
-          <Popup>Thomas</Popup>
+          <Popup>
+            Thomas
+            <br />
+            Destination: Frankfurt
+          </Popup>
         </Marker>
         <Marker position={[48.306683, 8.636517]}>
-          <Popup>Fabianna</Popup>
+          <Popup>
+            Fabianna
+            <br />
+            Destination: Kassel
+          </Popup>
         </Marker>
         <LocationInput setPosition={setPosition} onAdd={handleAdd} />
       </MapContainer>
