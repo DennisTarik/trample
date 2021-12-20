@@ -5,4 +5,10 @@ export default {
   title: 'Components/Settingsbutton',
 };
 
-export const Default = () => <Settingsbutton />;
+export const Default = () => (
+  <Settingsbutton
+    onClickHandler={function (): void {
+      throw new Error('Function not implemented.');
+    }}
+  />
+);
