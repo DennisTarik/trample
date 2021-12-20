@@ -11,8 +11,8 @@ export default {
 };
 
 export const Statistics = () => (
-  <MenuCard text="Dennis" imgSrc={StatisticsSrc} href="#" alt="" />
+  <MenuCard text="Dennis" imgSrc={StatisticsSrc} href="#" alt="" size={'big'} />
 );
 export const Profile = () => (
-  <MenuCard text="" imgSrc={ProfileSrc} href="#" alt="" />
+  <MenuCard text="" imgSrc={ProfileSrc} href="#" alt="" size={'big'} />
 );

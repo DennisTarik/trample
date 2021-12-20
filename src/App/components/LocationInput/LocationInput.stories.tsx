@@ -5,4 +5,6 @@ export default {
   title: 'Components/LocationInput',
 };
 
-export const Default = () => <LocationInput />;
+export const Default = () => (
+  <LocationInput setPosition={console.log} onAdd={console.log} />
+);

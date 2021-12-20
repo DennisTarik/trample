@@ -1,4 +1,9 @@
+type SettingsbuttonProps = {
+  onClickHandler: () => void;
+};
+
 export default function Settingsbutton(
+  { onClickHandler }: SettingsbuttonProps,
   probs: React.SVGProps<SVGPathElement>
 ): JSX.Element {
   return (
@@ -9,6 +14,7 @@ export default function Settingsbutton(
         viewBox="0 0 51 51"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={onClickHandler}
       >
         <path
           d="M51 25.5C51 39.5833 39.5833 51 25.5 51C11.4167 51 0 39.5833 0 25.5C0 11.4167 11.4167 0 25.5 0C39.5833 0 51 11.4167 51 25.5Z"

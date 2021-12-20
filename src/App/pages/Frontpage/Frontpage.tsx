@@ -12,7 +12,7 @@ export default function Frontpage(): JSX.Element {
       <div className={styles.background} />
       <Logo />
       <Login />
-      <Link to="/menu">
+      <Link className={styles.signup} to="/menu">
         <Signup />
       </Link>
       <Register />

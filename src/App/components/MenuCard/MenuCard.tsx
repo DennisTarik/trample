@@ -5,6 +5,7 @@ type MenuCardProps = {
   imgSrc: string;
   href: string;
   alt: string;
+  size: 'small' | 'big';
 };
 
 export default function MenuCard({
@@ -12,9 +13,13 @@ export default function MenuCard({
   imgSrc,
   href,
   alt,
+  size,
 }: MenuCardProps): JSX.Element {
   return (
-    <a className={styles.cardbig} href={href}>
+    <a
+      className={size === 'big' ? styles.cardbig : styles.cardsmall}
+      href={href}
+    >
       <img src={imgSrc} alt={alt} className={styles.picture} />
       <span className={styles.text}>{text}</span>
     </a>

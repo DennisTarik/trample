@@ -4,6 +4,7 @@
   align-items: center;
   justify-self: center;
   background-color: var(--color-primary);
+  font-family: var(--);
   width: 16.5rem;
   height: 4.375rem;
   border-radius: 1rem;

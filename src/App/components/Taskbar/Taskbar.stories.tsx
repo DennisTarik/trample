@@ -5,4 +5,10 @@ export default {
   title: 'Components/Taskbar',
 };
 
-export const Default = () => <Taskbar />;
+export const Default = () => (
+  <Taskbar
+    onSettings={function (): void {
+      throw new Error('Function not implemented.');
+    }}
+  />
+);
