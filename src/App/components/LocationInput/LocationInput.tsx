@@ -7,20 +7,13 @@ type LocationInputProps = {
   onAdd: (latlng: LatLng) => void;
 };
 
-export default function LocationInput({
-  setPosition,
-  onAdd,
-}: LocationInputProps) {
+export default function LocationInput({ setPosition }: LocationInputProps) {
   const map = useMap();
   const locateAndFly = () => {
     map.locate({ setView: true, maxZoom: map.getZoom() });
   };
 
   useMapEvents({
-    click(event) {
-      const { latlng } = event;
-      onAdd(latlng);
-    },
     locationfound(e) {
       setPosition(e.latlng);
     },
